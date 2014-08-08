@@ -2,7 +2,7 @@
 ###使用方法
 1. 安装
 ```
-gem install torrent-file , :git=>"git@github.com:secondrocker/torrent-file.git"
+gem install torrent-file
 ```
 2. 使用
 ```ruby
