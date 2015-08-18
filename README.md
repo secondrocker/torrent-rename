@@ -5,11 +5,4 @@
 gem install torrent-file
 ```
 2. 使用
-```ruby
-require "torrent-file"
-
-#参数为torrent路径
-tf = TorrentFile.new "/Users/killman/Desktop/xxxx.torrent"
-#在torrent文件目录下生成一个名字hash过的改编过的torrent文件
-tf.replace_file
-```
+$ uncheck  xxxx.torrent

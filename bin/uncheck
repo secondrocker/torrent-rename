@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.dirname(__FILE__) + '/../lib'
+
+require 'torrent-file.rb'
+require 'pathname'
+if ARGV.empty?
+  puts "参数错误"
+else
+  current_path = Pathname.new(File.dirname(__FILE__)).realpath.to_s
+  if ARGV[0] =~ /\.torrent$/
+    if File.exists? current_path +'/'+ ARGV[0]
+      begin
+        tf = TorrentFile.new ARGV[0]
+        tf.replace_file
+      rescue
+        puts '种子文件不合法'
+      end
+    else
+      puts current_path +'/'+ ARGV[0]
+    end
+  else
+    puts "非种子文件!"
+  end
+end

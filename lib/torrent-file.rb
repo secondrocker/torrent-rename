@@ -35,6 +35,7 @@ class TorrentFile
     n_file = File.new final_name , "w"
     n_file.puts encode_str
     n_file.close
+    puts "生成文件:#{final_name}"
   end
 
   def hashed_file_name(name)
