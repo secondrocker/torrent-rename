@@ -1,6 +1,6 @@
-require "torrent-file/becoding.rb"
+require "torrent-rename/becoding.rb"
 
-class TorrentFile
+class TorrentRename
   attr_accessor :path , :decode_obj
 
   def initialize(path)

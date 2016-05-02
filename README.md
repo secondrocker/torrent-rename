@@ -5,4 +5,4 @@
 gem install torrent-file
 ```
 2. 使用
-$ uncheck  xxxx.torrent
+$ torrent-rename  /xxxxx/xxxxx/xxxx.torrent

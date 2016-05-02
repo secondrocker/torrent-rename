@@ -1,5 +1,5 @@
 require "rspec"
-require "torrent-file"
+require "torrent-rename"
 
 describe "encode" do
   describe "int encode" do
