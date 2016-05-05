@@ -2,7 +2,7 @@
 ###使用方法
 1. 安装
 ```
-gem install torrent-file
+gem install torrent-rename
 ```
 2. 使用
 $ torrent-rename  /xxxxx/xxxxx/xxxx.torrent
