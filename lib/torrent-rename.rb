@@ -23,7 +23,7 @@ class TorrentRename
               decode_obj["info"]["files"][i][p].each_with_index do |d,j |
                 if decode_obj["info"]["files"][i][p][j]
                   decode_obj["info"]["files"][i][p][j] =
-                    hashed_file_name(decode_obj["info"]["files"][i][p][j] )
+                    hashed_file_name(decode_obj["info"]["files"][i][p][j] ) + hash[:data]
                 end
               end
             end
@@ -47,4 +47,8 @@ class TorrentRename
       name.hash.to_s
     end
   end
+end
+
+class A
+
 end
